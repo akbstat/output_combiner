@@ -1,0 +1,6 @@
+__pycache__
+.mock
+.vscode
+*.spec
+dist
+build

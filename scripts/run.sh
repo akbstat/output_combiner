@@ -1,0 +1,1 @@
+python ./main.py "D:\projects\py\combiner\.mock\config.json"
