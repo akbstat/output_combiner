@@ -41,6 +41,7 @@ class Combiner:
                 continue
         metadata = {}
         metadata["/Producer"] = ""
+        target_file.page_mode = "/UseOutlines"
         target_file.add_metadata(metadata)
         for page in target_file.pages:
             page.compress_content_streams()
