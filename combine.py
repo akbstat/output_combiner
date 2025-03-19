@@ -35,8 +35,9 @@ class Combiner:
                             self.add_button_page_number(page_number))
                         page_number += 1
                     target_file.add_page(page)
-                target_file.add_outline_item(
-                    title=source.title, page_number=source.page, fit=generic.Fit.xyz())
+                if len(source.title) > 0:
+                    target_file.add_outline_item(
+                        title=source.title, page_number=source.page, fit=generic.Fit.xyz())
             except Exception:
                 continue
         metadata = {}
